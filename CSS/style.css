@@ -198,14 +198,16 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.hebergement_cards a {
+  width: 31%;
+}
 .hebergement_card {
   height: 199px;
-  min-width: 30%;
   margin-top: 30px;
   border: 5px solid transparent;
 }
 .hebergement_room {
-  width: 246px;
+  width: 100%;
   height: 95px;
   border-radius: 20px 20px 0 0;
   display: flex;
@@ -346,8 +348,6 @@ footer {
 .footer_liste {
   display: flex;
   flex-direction: column;
-  max-width: 200px;
-  margin-right: 0;
   padding-bottom: 70px;
 }
 .footer_info_container {
@@ -355,7 +355,6 @@ footer {
   justify-content: space-between;
   width: 80%;
   max-width: 990px;
-  flex-wrap: wrap;
 }
 .footer_link {
   margin-top: 15px;
@@ -377,8 +376,8 @@ footer {
     width: 60%;
     margin-right: 10px;
   }
-  .hebergement_cards {
-    justify-content: space-evenly;
+  .hebergement_cards a {
+    width: 45%;
   }
   .popular_cards {
     justify-content: center;
@@ -425,6 +424,9 @@ footer {
    margin-right: 0;
    padding-bottom: 50px;
   } 
+  .hebergement_cards a {
+    width: 31%;
+  }
   .afficher_plus {
     padding-bottom: 0px;
   }
@@ -459,12 +461,6 @@ footer {
     display: flex;
     align-items: center;
     padding: 5px 0px 0px 20px;
-  }
-
-  /* Footer */
-
-  .footer {
-    padding: 50px;
   }
 }
 
@@ -521,7 +517,7 @@ footer {
   .research_bar {
     width: 200px;
   }
-  #button_res {
+  #button_research {
     display: none;
   }
   #icon_glass {
@@ -629,6 +625,9 @@ footer {
     width: 100%;
     flex-direction: column;
   }
+  .hebergement_cards a {
+    width: 100%;
+  }
   .activites_title {
     max-width: 130px;
   }
@@ -644,26 +643,15 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
-  .popular_room,
-  .hebergement_room,
-  .activites_room {
-    width: 100%;
-    height: 144px;
-  }
+
   .activites_room_img img {
     height: 135px;
   }
 
   /* Footer*/
 
-  .footer_info {
-    margin-right: 60px;
-  }
-  footer {
-    margin-left: 0;
-  }
-  .footer_info {
-    margin-right: 30% ;
+  .footer_info_container {
+    flex-flow: column wrap;
   }
 }
 @media screen and (max-width: 480px) {
@@ -684,11 +672,5 @@ footer {
   }
   .filters_button .icons {
     font-size: 18px;
-  }
-
-  /* Footer*/
-
-  .footer_info {
-    margin-right: 20% ;
   }
 }
