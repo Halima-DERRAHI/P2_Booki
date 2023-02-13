@@ -517,6 +517,9 @@ footer {
     margin: auto;
     width: 90%;
   }
+  .research_bar {
+    width: 200px;
+  }
   #button_res {
     display: none;
   }
