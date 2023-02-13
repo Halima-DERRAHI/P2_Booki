@@ -105,6 +105,7 @@ nav {
   font-weight: bolder;
   font-size: 16px;
   padding: 17px;
+  cursor: pointer;
 }
 #icon_glass {
   display: none;
