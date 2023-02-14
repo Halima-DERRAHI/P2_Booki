@@ -484,7 +484,7 @@ footer {
     font-size: 14px;
   }
   .filters_buttons{
-    width: 91%;
+    justify-content: flex-start;
   }
   .populaire {
     padding: 30px 15px;
