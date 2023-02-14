@@ -497,7 +497,6 @@ footer {
   }
 }
 
-
 /* Téléphone*/
 
 @media screen and (max-width: 768px) {
@@ -662,7 +661,6 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
-
   .activites_room_img img {
     height: 135px;
   }
