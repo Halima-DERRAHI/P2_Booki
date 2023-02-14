@@ -666,7 +666,9 @@ footer {
 }
 
   /* Footer*/
-
+  footer {
+    padding: 50px 0px 10px 40px;
+  }
   .footer_info_container {
     flex-flow: column wrap;
   }
