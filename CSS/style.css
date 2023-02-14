@@ -534,7 +534,7 @@ footer {
     width: 90%;
   }
   .research_bar {
-    width: 200px;
+    width: 235px;
   }
   #button_research {
     display: none;
@@ -613,8 +613,7 @@ footer {
   .populaire {
     border-radius: 0px;
     margin-top: 0;
-    margin-bottom: 20px;
-    padding: 20px;
+    padding: 40px 5%;
     width: auto;
     justify-content: center;
   }
