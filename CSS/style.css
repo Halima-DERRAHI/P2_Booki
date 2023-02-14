@@ -115,14 +115,14 @@ nav {
 
 .filters {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   flex-flow: row wrap;
   padding-bottom: 40px;
+
 }
 .filter_title {
-  display: inline;
-  padding: 5 0px 5 0px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .filters h4 {
   display: inline;
@@ -130,13 +130,14 @@ nav {
 .filters_buttons {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
   padding-left: 20px;
+  width: 60%;
 }
 .filters_button {
   border: solid 2px #D9D9D9;
   border-radius: 50px;
   padding: 15px 20px;
-  margin-left: 40px;
   margin-bottom: 5px;
   display: inline-block;
 }
@@ -240,6 +241,9 @@ nav {
 .populaire {
   width: 28%;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .populaire_title {
   display: flex;
@@ -252,15 +256,14 @@ nav {
 }
 .popular_cards {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .popular_card {
   height: 145px;
-  width: 95%;
-  min-width: 255px;
+  width: 100%;
   margin-top: 30px;
+  margin-right: 0;
   border: 5px solid transparent;
   justify-content: flex-end;
 }
@@ -371,13 +374,18 @@ footer {
 @media screen and (max-width: 1380px){
   
   /* Section 2 */ 
-  
+  .filters_buttons{
+    width: 75%;
+  }
   .hebergement {
     width: 60%;
     margin-right: 10px;
   }
   .hebergement_cards a {
     width: 48%;
+  }
+  .populaire {
+    justify-content: flex-start;
   }
   .popular_cards {
     justify-content: center;
@@ -409,6 +417,9 @@ footer {
   #section1 {
     margin: auto;
   }
+  .filters_buttons{
+    width: 91%;
+  }
   .filters_button {
     margin-left: 25px;
   }
@@ -434,10 +445,11 @@ footer {
     margin-top: 50px;
     padding: 30px;
     width: 100%;
+    justify-content: center;
   }
   .popular_cards {
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: space-around;
   }
   .popular_cards a {
     width: 30%;
@@ -469,12 +481,19 @@ footer {
 @media screen and (max-width: 931px) {
   .filters_button {
     margin-left: 20px;
-  }
-  .filters_button {
     font-size: 14px;
   }
-  .popular_cards a {
-    width: 50%;
+  .filters_buttons{
+    width: 90%;
+  }
+  .populaire {
+    padding: 30px 15px;
+  }
+  .popular_room_description {
+    margin-right: 0;
+  }
+  .popular_room_img img {
+    width: 100px;
   }
 }
 
@@ -544,7 +563,6 @@ footer {
     display: flex;
     align-items: center;
     font-size: 16px;
-    margin: auto;
   }
   .filters_description .fa-info {
     display: block;
@@ -582,14 +600,12 @@ footer {
   }
   .hebergement {
     background-color: white;
+    margin-top: 20px;
   }
   .hebergement,
   .activites {
     max-width: 90%;
     padding:0;
-  }
-  .hebergement{
-  margin-top: 20px;
   }
   .afficher_plus {
     display: none;
@@ -598,17 +614,20 @@ footer {
     border-radius: 0px;
     margin-top: 0;
     margin-bottom: 20px;
-    flex-direction: column;
+    padding: 20px;
     width: auto;
+    justify-content: center;
   }
-  .popular_cards,
+  .popular_cards {
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+  }
   .popular_cards a {
     width: 100%;
-    min-width: 0;
   }
   .popular_card {
-    width: 100%;
-    min-width: 0;
+    width: auto;
   }
   .popular_name p {
     font-size: 14px;
@@ -663,8 +682,9 @@ footer {
   /* Filters */
 
   .filters_buttons {
-    padding-left: 0;
     justify-content: space-around;
+    padding-left: 0;
+    width: 100%;
   }
  .filters_button {
     width: 140px;
