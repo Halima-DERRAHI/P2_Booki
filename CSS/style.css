@@ -484,7 +484,7 @@ footer {
     font-size: 14px;
   }
   .filters_buttons{
-    width: 90%;
+    width: 91%;
   }
   .populaire {
     padding: 30px 15px;
@@ -531,9 +531,6 @@ footer {
     flex-direction: column;
     margin: auto;
     width: 90%;
-  }
-  .research_bar {
-    width: 235px;
   }
   #button_research {
     display: none;
@@ -684,10 +681,10 @@ footer {
     width: 100%;
   }
  .filters_button {
-    width: 140px;
+    width: 133px;
     font-size: 11px;
     margin-bottom: 15px;
-    padding: 14px 0px 16px 20px;
+    padding: 15px 10px;
     align-items: center;
     margin: 5px 2px ;
   }
