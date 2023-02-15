@@ -1,12 +1,13 @@
 * {
   margin: 0;
 }
+
 body {
   font-family: 'Raleway', sans-serif;
   width: 95%;
   max-width: 1400px;
   margin: auto;
-  }
+}
 
 a {
   text-decoration: none;
@@ -16,34 +17,40 @@ a {
 /* Header */
 
 .logo_img {
-height: 19px;
-width: 61px;
-padding-top:50px;
+  height: 19px;
+  width: 61px;
+  padding-top:50px;
 }
+
 .menu {
   display: flex;
   justify-content: flex-end;
   width: 300px;
   padding: 0px 0px 0px 50px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
   padding : 0px 0px 50px 0px;
 }
+
 .nav_link {
   margin-left: auto;
   margin-right:auto;
 }
+
 .hebergement_link ,
 .activites_link {
   display: inline-flex;
   padding-top: 48px;
   border-top: 2px solid transparent;
 }
+
 .hebergement_link {
   width: 60%;
 }
+
 .activites_link {
   width: 40%;
 }
@@ -51,8 +58,9 @@ nav {
 .activites_link:hover {
   border-top: 2px solid #0065FC;
 }
+
 .hebergement_link:hover a,
-.activites_link:hover a{
+.activites_link:hover a {
   color: #0065FC;
 }
 
@@ -73,11 +81,12 @@ nav {
   margin-bottom: 25px;
   padding: 10px 50px 5px 00px;
 }
+
 .icon_location {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55px;
+  width: 95px;
   height: auto;
   background-color: #F2F2F2;
   border-radius: 14px 0 0 14px;
@@ -85,9 +94,11 @@ nav {
 .fa-location-dot {
   font-size: 17px;
 }
+
 .research_bar {
   padding: 0 0 0 20px;
-  width: 220px;
+  width: 100%;
+  max-width: 230px;
   border: none;
   border-top: solid 1px #F2F2F2;
   border-bottom: solid 1px #F2F2F2;
@@ -149,6 +160,7 @@ nav {
 .filters_button:hover {
   color: #0065fc;
   background-color: #DEEBFF;
+  transform: scale(1.1);
 }
 .filters_description p{
   display: inline;
@@ -193,6 +205,9 @@ nav {
   background: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 20px;
+}
+.card:hover {
+  box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
 }
 .hebergement_cards{
   display: flex;
@@ -529,6 +544,7 @@ footer {
     margin: auto;
     width: 90%;
   }
+
   #button_research {
     display: none;
   }
@@ -658,8 +674,8 @@ footer {
   .activites_room_img img {
     height: 135px;
   }
-.activites_room_title {
-  padding-top: 12px;
+  .activites_room_title {
+    padding-top: 12px;
 }
 
   /* Footer*/
@@ -673,9 +689,7 @@ footer {
 @media screen and (max-width: 480px) {
  
   /* Filters */
-  .research_bar {
-    width: 230px;
-  }
+
   .filters_buttons {
     padding-left: 0;
     width: 100%;
